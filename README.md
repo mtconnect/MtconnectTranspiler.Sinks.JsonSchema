@@ -1,0 +1,1 @@
+# MtconnectTranspiler.Sinks.JsonSchema
