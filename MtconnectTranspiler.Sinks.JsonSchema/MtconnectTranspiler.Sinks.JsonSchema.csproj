@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\Enum.scriban" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\Enum.scriban">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MtconnectTranspiler" Version="1.0.7" />
+    <PackageReference Include="MtconnectTranspiler.Sinks.ScribanTemplates" Version="1.0.14" />
+  </ItemGroup>
+
+</Project>

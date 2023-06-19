@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MtconnectTranspiler.Sinks.JsonSchema.Example": {
+      "commandName": "Project",
+      "commandLineArgs": "\"%UserProfile%\\Desktop\\MTConnect Transpiled\\Json-Schema\""
+    }
+  }
+}

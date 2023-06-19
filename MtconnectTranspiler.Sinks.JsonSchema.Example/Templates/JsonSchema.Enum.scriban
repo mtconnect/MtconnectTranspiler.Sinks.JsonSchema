@@ -1,0 +1,24 @@
+{
+  "$schema": "{{ source.namespace }}",
+  "title": "{{ source.title }}",
+  "type": "{{ source.value_type }}",
+  "enum": [
+    {{~ for item in source.items ~}}
+    "{{ item.name }}",
+    {{~ end ~}}
+  ],
+  "description": "{{ source?.summary }}",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "{{ source.value_type }}"
+      },
+      "enum": [
+        {{~ for item in source.items ~}}
+        "{{ item?.summary }}",
+        {{~ end ~}}
+      ]
+    }
+  }
+}

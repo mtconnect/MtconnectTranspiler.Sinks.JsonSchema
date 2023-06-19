@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MtconnectTranspiler.Sinks.JsonSchema": {
+      "commandName": "Project"
+    }
+  }
+}
