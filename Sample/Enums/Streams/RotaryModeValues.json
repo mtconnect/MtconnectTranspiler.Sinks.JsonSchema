@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RotaryModeValues",
+  "type": "string",
+  "enum": [
+    "SPINDLE",
+    "INDEX",
+    "CONTOUR",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "axis is functioning as a spindle.",
+        "axis is configured to index.",
+        "position of the axis is being interpolated.",
+      ]
+    }
+  }
+}

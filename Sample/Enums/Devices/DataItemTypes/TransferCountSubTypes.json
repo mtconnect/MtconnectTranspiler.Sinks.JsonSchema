@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TransferCountSubTypes",
+  "type": "string",
+  "enum": [
+    "_GOOD",
+    "_ABORTED",
+    "_FAILED",
+    "_ALL",
+    "_BAD",
+    "_REMAINING",
+    "_COMPLETE",
+    "_TARGET",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "accumulation of actions, items, or activities being counted that conform to specification or expectation.",
+        "accumulation of actions or activities that were attempted, but terminated before they could be completed.",
+        "accumulation of actions, items, or activities being counted that do not conform to specification or expectation.",
+        "accumulation of all actions, items, or activities being counted independent of the outcome.",
+        "accumulation of actions, items, or activities being counted that do not conform to specification or expectation.",
+        "accumulation of actions, items, or activities yet to be counted.",
+        "accumulation of actions, items, or activities that have been completed, independent of the outcome.",
+        "goal of the operation or process.",
+      ]
+    }
+  }
+}

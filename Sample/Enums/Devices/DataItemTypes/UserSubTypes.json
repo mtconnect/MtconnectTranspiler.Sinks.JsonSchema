@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserSubTypes",
+  "type": "string",
+  "enum": [
+    "_OPERATOR",
+    "_MAINTENANCE",
+    "_SET_UP",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "identifier of the person currently responsible for operating the piece of equipment.",
+        "identifier of the person currently responsible for performing maintenance on the piece of equipment.",
+        "identifier of the person currently responsible for preparing a piece of equipment for production or restoring the piece of equipment to a neutral state after production.",
+      ]
+    }
+  }
+}

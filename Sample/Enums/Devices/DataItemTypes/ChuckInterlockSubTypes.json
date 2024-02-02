@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChuckInterlockSubTypes",
+  "type": "string",
+  "enum": [
+    "_MANUAL_UNCLAMP",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "indication of the state of an operator controlled interlock that can inhibit the ability to initiate an unclamp action of an electronically controlled chuck.  When  is , it is expected that a chuck cannot be unclamped until  is set to . ",
+      ]
+    }
+  }
+}

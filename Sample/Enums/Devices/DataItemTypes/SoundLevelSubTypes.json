@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SoundLevelSubTypes",
+  "type": "string",
+  "enum": [
+    "_NO_SCALE",
+    "_A_SCALE",
+    "_B_SCALE",
+    "_C_SCALE",
+    "_D_SCALE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "No weighting factor on the frequency scale",
+        "A Scale weighting factor.   This is the default weighting factor if no factor is specified",
+        "B Scale weighting factor",
+        "C Scale weighting factor",
+        "D Scale weighting factor",
+      ]
+    }
+  }
+}

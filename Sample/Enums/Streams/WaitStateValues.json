@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WaitStateValues",
+  "type": "string",
+  "enum": [
+    "POWERING_UP",
+    "POWERING_DOWN",
+    "PART_LOAD",
+    "PART_UNLOAD",
+    "TOOL_LOAD",
+    "TOOL_UNLOAD",
+    "MATERIAL_LOAD",
+    "MATERIAL_UNLOAD",
+    "SECONDARY_PROCESS",
+    "PAUSING",
+    "RESUMING",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "execution is waiting while the equipment is powering up and is not currently available to begin producing parts or products.",
+        "execution is waiting while the equipment is powering down but has not fully reached a stopped state.",
+        "execution is waiting while one or more discrete workpieces are being loaded.",
+        "execution is waiting while one or more discrete workpieces are being unloaded.",
+        "execution is waiting while a tool or tooling is being loaded.",
+        "execution is waiting while a tool or tooling is being unloaded.",
+        "execution is waiting while material is being loaded.",
+        "execution is waiting while material is being unloaded.",
+        "execution is waiting while another process is completed before the execution can resume.",
+        "execution is waiting while the equipment is pausing but the piece of equipment has not yet reached a fully paused state.",
+        "execution is waiting while the equipment is resuming the production cycle but has not yet resumed execution.",
+      ]
+    }
+  }
+}

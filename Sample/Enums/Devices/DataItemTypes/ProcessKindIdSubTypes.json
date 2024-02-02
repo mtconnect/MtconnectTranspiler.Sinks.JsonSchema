@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProcessKindIdSubTypes",
+  "type": "string",
+  "enum": [
+    "_UUID",
+    "_ISO_STEP_EXECUTABLE",
+    "_PROCESS_NAME",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "universally unique identifier as specified in ISO 11578 or RFC 4122.",
+        "reference to a ISO 10303 Executable.",
+        "word or set of words by which a process being executed (process occurrence) by the device is known, addressed, or referred to. ",
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PowerStatusValues",
+  "type": "string",
+  "enum": [
+    "ON",
+    "OFF",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "",
+        "",
+      ]
+    }
+  }
+}

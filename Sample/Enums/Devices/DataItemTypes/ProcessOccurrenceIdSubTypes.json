@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProcessOccurrenceIdSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTIVITY",
+    "_SEGMENT",
+    "_RECIPE",
+    "_OPERATION",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "phase or segment of a recipe or program.",
+        "phase of a recipe process.",
+        "process as part of product production; can be a subprocess of a larger process.",
+        "step of a discrete manufacturing process.",
+      ]
+    }
+  }
+}

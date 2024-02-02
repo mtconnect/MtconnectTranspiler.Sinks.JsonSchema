@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EquipmentModeSubTypes",
+  "type": "string",
+  "enum": [
+    "_LOADED",
+    "_WORKING",
+    "_OPERATING",
+    "_POWERED",
+    "_DELAY",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "indication that the sub-parts of a piece of equipment are under load.  Example: For traditional machine tools, this is an indication that the cutting tool is assumed to be engaged with the part.",
+        "indication that a piece of equipment is performing any activity, the equipment is active and performing a function under load or not.  Example: For traditional machine tools, this includes when the piece of equipment is , making rapid moves, executing a tool change, etc.",
+        "indication that the major sub-parts of a piece of equipment are powered or performing any activity whether producing a part or product or not.  Example: For traditional machine tools, this includes when the piece of equipment is  or it is idle.",
+        "indication that primary power is applied to the piece of equipment and, as a minimum, the controller or logic portion of the piece of equipment is powered and functioning or components that are required to remain on are powered.  Example: Heaters for an extrusion machine that required to be powered even when the equipment is turned off.",
+        "elapsed time of a temporary halt of action.",
+      ]
+    }
+  }
+}

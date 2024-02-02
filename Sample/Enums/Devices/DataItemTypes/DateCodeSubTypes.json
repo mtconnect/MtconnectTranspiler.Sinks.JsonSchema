@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DateCodeSubTypes",
+  "type": "string",
+  "enum": [
+    "_MANUFACTURE",
+    "_EXPIRATION",
+    "_FIRST_USE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "time and date code relating to the production of a material or other physical item.",
+        "time and date code relating to the expiration or end of useful life for a material or other physical item.",
+        "time and date code relating the first use of a material or other physical item.",
+      ]
+    }
+  }
+}

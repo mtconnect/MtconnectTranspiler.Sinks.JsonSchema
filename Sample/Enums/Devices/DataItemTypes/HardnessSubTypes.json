@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HardnessSubTypes",
+  "type": "string",
+  "enum": [
+    "_ROCKWELL",
+    "_VICKERS",
+    "_SHORE",
+    "_BRINELL",
+    "_LEEB",
+    "_MOHS",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "scale to measure the resistance to deformation of a surface.",
+        "scale to measure the resistance to deformation of a surface.",
+        "scale to measure the resistance to deformation of a surface.",
+        "scale to measure the resistance to deformation of a surface.",
+        "scale to measure the elasticity of a surface.",
+        "scale to measure the resistance to scratching of a surface.",
+      ]
+    }
+  }
+}

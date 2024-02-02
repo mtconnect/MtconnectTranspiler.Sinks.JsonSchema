@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EndOfBarSubTypes",
+  "type": "string",
+  "enum": [
+    "_PRIMARY",
+    "_AUXILIARY",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "specific applications  reference one or more locations on a piece of bar stock as the indication for the .   The main or most important location  be designated as the  indication for the .  If no  is specified,   be the default  indication.",
+        "when multiple locations on a piece of bar stock are referenced as the indication for the , the additional location(s)  be designated as  indication(s) for the .  ",
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConnectionStatusValues",
+  "type": "string",
+  "enum": [
+    "CLOSED",
+    "LISTEN",
+    "ESTABLISHED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "no connection at all.",
+        " is waiting for a connection request from an .",
+        "open connection.  The normal state for the data transfer phase of the connection.",
+      ]
+    }
+  }
+}

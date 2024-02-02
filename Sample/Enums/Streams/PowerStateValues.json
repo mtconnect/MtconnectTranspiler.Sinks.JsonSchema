@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PowerStateValues",
+  "type": "string",
+  "enum": [
+    "ON",
+    "OFF",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is present and active.",
+        "source of energy for an entity or the enabling signal providing permission for the entity to perform its function(s) is not present or is disconnected.",
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ApplicationSubTypes",
+  "type": "string",
+  "enum": [
+    "_VERSION",
+    "_RELEASE_DATE",
+    "_MANUFACTURER",
+    "_LICENSE",
+    "_INSTALL_DATE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "version of the hardware or software.",
+        "date the hardware or software was released for general use.  ",
+        "corporate identity for the maker of the hardware or software.  ",
+        "license code to validate or activate the hardware or software.",
+        "date the hardware or software was installed.",
+      ]
+    }
+  }
+}

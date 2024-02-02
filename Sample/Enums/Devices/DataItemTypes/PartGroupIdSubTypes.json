@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PartGroupIdSubTypes",
+  "type": "string",
+  "enum": [
+    "_LOT",
+    "_RAW_MATERIAL",
+    "_BATCH",
+    "_UUID",
+    "_HEAT_TREAT",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "identifier that references a group of parts tracked as a lot. ",
+        "material that is used to produce parts.",
+        "identifier that references a group of parts produced in a batch.",
+        "universally unique identifier as specified in ISO 11578 or RFC 4122.",
+        "identifier used to reference a material heat number.",
+      ]
+    }
+  }
+}

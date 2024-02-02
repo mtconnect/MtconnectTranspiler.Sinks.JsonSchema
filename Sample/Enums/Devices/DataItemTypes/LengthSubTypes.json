@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LengthSubTypes",
+  "type": "string",
+  "enum": [
+    "_STANDARD",
+    "_REMAINING",
+    "_USEABLE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "standard or original length of an object.",
+        "remaining total length of an object.",
+        "remaining usable length of an object.",
+      ]
+    }
+  }
+}

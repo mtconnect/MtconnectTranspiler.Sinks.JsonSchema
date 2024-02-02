@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LockStateValues",
+  "type": "string",
+  "enum": [
+    "LOCKED",
+    "UNLOCKED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "mechanism is engaged and preventing the associated  from being opened or operated.",
+        "mechanism is disengaged and the associated  is able to be opened or operated.",
+      ]
+    }
+  }
+}

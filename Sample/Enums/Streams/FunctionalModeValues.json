@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FunctionalModeValues",
+  "type": "string",
+  "enum": [
+    "PRODUCTION",
+    "SETUP",
+    "TEARDOWN",
+    "MAINTENANCE",
+    "PROCESS_DEVELOPMENT",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        " is currently producing product, ready to produce product, or its current intended use is to be producing product.",
+        " is not currently producing product.   It is being prepared or modified to begin production of product.",
+        " is not currently producing product.  Typically, it has completed the production of a product and is being modified or returned to a neutral state such that it may then be prepared to begin production of a different product.",
+        " is not currently producing product.  It is currently being repaired, waiting to be repaired, or has not yet been returned to a normal production status after maintenance has been performed.",
+        " is being used to prove-out a new process, testing of equipment or processes, or any other active use that does not result in the production of product.",
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProgramSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTIVITY",
+    "_SEGMENT",
+    "_RECIPE",
+    "_OPERATION",
+    "_ACTIVE",
+    "_MAIN",
+    "_SCHEDULE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "phase or segment of a recipe or program.",
+        "phase of a recipe process.",
+        "process as part of product production; can be a subprocess of a larger process.",
+        "step of a discrete manufacturing process.",
+        "identity of the logic or motion program currently executing.",
+        "identity of the primary logic or motion program currently being executed.   It is the starting nest level in a call structure and may contain calls to sub programs.",
+        "identity of a control program that is used to specify the order of execution of other programs.",
+      ]
+    }
+  }
+}

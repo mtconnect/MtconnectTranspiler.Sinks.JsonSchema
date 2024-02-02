@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EmergencyStopValues",
+  "type": "string",
+  "enum": [
+    "ARMED",
+    "TRIGGERED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "emergency stop circuit is complete and the piece of equipment, component, or composition is allowed to operate. ",
+        "operation of the piece of equipment, component, or composition is inhibited.",
+      ]
+    }
+  }
+}

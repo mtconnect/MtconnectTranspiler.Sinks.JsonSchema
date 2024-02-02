@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ExecutionValues",
+  "type": "string",
+  "enum": [
+    "READY",
+    "ACTIVE",
+    "INTERRUPTED",
+    "FEED_HOLD",
+    "STOPPED",
+    "OPTIONAL_STOP",
+    "PROGRAM_STOPPED",
+    "PROGRAM_COMPLETED",
+    "WAIT",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        " is ready to execute instructions.  It is currently idle.",
+        " is actively executing an instruction.",
+        " suspends the execution of the program due to an external signal.  Action is required to resume execution.",
+        "motion of the active axes are commanded to stop at their current position.",
+        " program is not  to execute.",
+        "command from the program has intentionally interrupted execution.  The   have another state that indicates if the execution is interrupted or the execution ignores the interrupt instruction.",
+        "command from the program has intentionally interrupted execution.  Action is required to resume execution.",
+        "program completed execution.",
+        " suspends execution while a secondary operation executes.  Execution resumes automatically once the secondary operation completes.",
+      ]
+    }
+  }
+}

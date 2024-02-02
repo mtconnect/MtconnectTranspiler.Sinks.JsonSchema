@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PartProcessingStateValues",
+  "type": "string",
+  "enum": [
+    "NEEDS_PROCESSING",
+    "IN_PROCESS",
+    "PROCESSING_ENDED",
+    "PROCESSING_ENDED_COMPLETE",
+    "PROCESSING_ENDED_STOPPED",
+    "PROCESSING_ENDED_ABORTED",
+    "PROCESSING_ENDED_LOST",
+    "PROCESSING_ENDED_SKIPPED",
+    "PROCESSING_ENDED_REJECTED",
+    "WAITING_FOR_TRANSIT",
+    "IN_TRANSIT",
+    "TRANSIT_COMPLETE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "part occurrence is not actively being processed, but the processing has not ended.   Processing requirements exist that have not yet been fulfilled. This is the default entry state when the part occurrence is originally received. In some cases, the part occurrence may return to this state while it waits for additional processing to be performed.",
+        "part occurrence is actively being processed.",
+        "part occurrence is no longer being processed.   A general state when the reason for termination is unknown.",
+        "part occurrence has completed processing successfully.",
+        "process has been stopped during the processing.   The part occurrence will require special treatment.",
+        "processing of the part occurrence has come to a premature end.",
+        "terminal state when the part occurrence has been removed from the equipment by an external entity and it no longer exists at the equipment.",
+        "part occurrence has been skipped for processing on the piece of equipment.",
+        "part occurrence has been processed completely. However, the processing may have a problem.",
+        "part occurrence is waiting for transit.",
+        "part occurrence is being transported to its destination.",
+        "part occurrence has been placed at its designated destination.",
+      ]
+    }
+  }
+}

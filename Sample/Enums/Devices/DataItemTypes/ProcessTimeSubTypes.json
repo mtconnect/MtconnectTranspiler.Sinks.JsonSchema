@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProcessTimeSubTypes",
+  "type": "string",
+  "enum": [
+    "_START",
+    "_COMPLETE",
+    "_TARGET_COMPLETION",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "boundary when an activity or an event commences.",
+        "time and date associated with the completion of an activity or event.",
+        "projected time and date associated with the end or completion of an activity or event.",
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AxisCouplingValues",
+  "type": "string",
+  "enum": [
+    "TANDEM",
+    "SYNCHRONOUS",
+    "MASTER",
+    "SLAVE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "axes are physically connected to each other and operate as a single unit.",
+        "axes are not physically connected to each other but are operating together in lockstep.",
+        "axis is the master of the .",
+        "axis is a slave to the .",
+      ]
+    }
+  }
+}

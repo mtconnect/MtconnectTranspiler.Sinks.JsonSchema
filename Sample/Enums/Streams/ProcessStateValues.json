@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProcessStateValues",
+  "type": "string",
+  "enum": [
+    "INITIALIZING",
+    "READY",
+    "ACTIVE",
+    "COMPLETE",
+    "INTERRUPTED",
+    "ABORTED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "device is preparing to execute the process occurrence.",
+        "process occurrence is ready to be executed.",
+        "process occurrence is actively executing.",
+        "process occurrence is now finished.",
+        "process occurrence has been stopped and may be resumed.",
+        "process occurrence has come to a premature end and cannot be resumed.",
+      ]
+    }
+  }
+}

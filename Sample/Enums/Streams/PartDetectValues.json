@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PartDetectValues",
+  "type": "string",
+  "enum": [
+    "PRESENT",
+    "NOT_PRESENT",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "part or work piece is detected or is present.",
+        "part or work piece is not detected or is not present.",
+      ]
+    }
+  }
+}

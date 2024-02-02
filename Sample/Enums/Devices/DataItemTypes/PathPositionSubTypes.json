@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PathPositionSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTUAL",
+    "_COMMANDED",
+    "_TARGET",
+    "_PROBE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "measured or reported value of an .",
+        "directive value including adjustments such as an offset or overrides.",
+        "goal of the operation or process.",
+        "position provided by a measurement probe.  : May be deprecated in the future.",
+      ]
+    }
+  }
+}

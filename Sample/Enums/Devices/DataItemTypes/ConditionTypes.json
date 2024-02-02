@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ConditionTypes",
+  "type": "string",
+  "enum": [
+    "ACTUATOR",
+    "COMMUNICATIONS",
+    "DATA_RANGE",
+    "LOGIC_PROGRAM",
+    "MOTION_PROGRAM",
+    "SYSTEM",
+    "ACTUATOR",
+    "COMMUNICATIONS",
+    "DATA_RANGE",
+    "LOGIC_PROGRAM",
+    "MOTION_PROGRAM",
+    "SYSTEM",
+  ],
+  "description": "This section provides semantic information for  types.   types are reported differently from other  types. They are reported based on the  for each .  The  and  (where applicable) properties for a   be any of the  and  attributes defined for   or    listed in the .  This section lists additional  types that have been defined to represent the health and fault status of .",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+      ]
+    }
+  }
+}

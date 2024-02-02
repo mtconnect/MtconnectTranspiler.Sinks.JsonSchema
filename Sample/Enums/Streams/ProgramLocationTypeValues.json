@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProgramLocationTypeValues",
+  "type": "string",
+  "enum": [
+    "LOCAL",
+    "EXTERNAL",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "managed by the controller.",
+        "not managed by the controller.",
+      ]
+    }
+  }
+}

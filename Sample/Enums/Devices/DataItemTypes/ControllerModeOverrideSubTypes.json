@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ControllerModeOverrideSubTypes",
+  "type": "string",
+  "enum": [
+    "_DRY_RUN",
+    "_SINGLE_BLOCK",
+    "_MACHINE_AXIS_LOCK",
+    "_OPTIONAL_STOP",
+    "_TOOL_CHANGE_STOP",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "setting or operator selection used to execute a test mode to confirm the execution of machine functions.   When  is , the equipment performs all of its normal functions, except no part or product is produced.  If the equipment has a spindle, spindle operation is suspended.",
+        "setting or operator selection that changes the behavior of the controller on a piece of equipment.   Program execution is paused after each block of code is executed when  is .     When  is ,   change to  after completion of each block of code. ",
+        "setting or operator selection that changes the behavior of the controller on a piece of equipment.    When  is , program execution continues normally, but no equipment motion occurs.",
+        "setting or operator selection that changes the behavior of the controller on a piece of equipment.   The program execution is stopped after a specific program block is executed when  is .      In the case of a G-Code program, a program block containing a M01 code designates the command for an .     change to  after a program block specifying an optional stop is executed and the   selection is .",
+        "setting or operator selection that changes the behavior of the controller on a piece of equipment.    Program execution is paused when a command is executed requesting a cutting tool to be changed.     change to  after completion of the command requesting a cutting tool to be changed and  is .",
+      ]
+    }
+  }
+}

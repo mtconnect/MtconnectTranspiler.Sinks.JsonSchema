@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AxisInterlockValues",
+  "type": "string",
+  "enum": [
+    "ACTIVE",
+    "INACTIVE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "axis lockout function is activated, power has been removed from the axis, and the axis is allowed to move freely.",
+        "axis lockout function has not been activated, the axis may be powered, and the axis is capable of being controlled by another component.",
+      ]
+    }
+  }
+}

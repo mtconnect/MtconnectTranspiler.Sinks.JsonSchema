@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ValveStateValues",
+  "type": "string",
+  "enum": [
+    "OPEN",
+    "OPENING",
+    "CLOSED",
+    "CLOSING",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        " where flow is allowed and the aperture is static.  > Note: For a binary value,  indicates the valve has the maximum possible aperture.",
+        "valve is transitioning from a  state to an  state.",
+        " where flow is not possible, the aperture is static, and the valve is completely shut.",
+        "valve is transitioning from an  state to a  state.",
+      ]
+    }
+  }
+}

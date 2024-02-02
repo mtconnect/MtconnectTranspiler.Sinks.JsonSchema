@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NetworkSubTypes",
+  "type": "string",
+  "enum": [
+    "_I_PV4_ADDRESS",
+    "_I_PV6_ADDRESS",
+    "_GATEWAY",
+    "_SUBNET_MASK",
+    "_V_LAN_ID",
+    "_MAC_ADDRESS",
+    "_WIRELESS",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "IPV4 network address of the component. ",
+        "IPV6 network address of the component. ",
+        "Gateway for the component network.",
+        "SubNet mask for the component network. ",
+        "layer2 Virtual Local Network (VLAN) ID for the component network.",
+        "Media Access Control Address.   The unique physical address of the network hardware. ",
+        "identifies whether the connection type is wireless.",
+      ]
+    }
+  }
+}

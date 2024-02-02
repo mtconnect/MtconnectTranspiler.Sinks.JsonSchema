@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PartStatusValues",
+  "type": "string",
+  "enum": [
+    "PASS",
+    "FAIL",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "part conforms to given requirements.",
+        "part does not conform to some given requirements.",
+      ]
+    }
+  }
+}

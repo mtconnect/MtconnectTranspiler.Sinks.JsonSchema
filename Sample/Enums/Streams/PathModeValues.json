@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PathModeValues",
+  "type": "string",
+  "enum": [
+    "INDEPENDENT",
+    "MASTER",
+    "SYNCHRONOUS",
+    "MIRROR",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "path is operating independently and without the influence of another path.",
+        "path provides information or state values that influences the operation of other  of similar type.",
+        "physical or logical parts which are not physically connected to each other but are operating together.",
+        "axes associated with the path are mirroring the motion of the  path.",
+      ]
+    }
+  }
+}

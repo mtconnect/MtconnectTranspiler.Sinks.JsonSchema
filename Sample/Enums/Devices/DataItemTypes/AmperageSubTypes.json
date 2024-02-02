@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AmperageSubTypes",
+  "type": "string",
+  "enum": [
+    "_ALTERNATING",
+    "_DIRECT",
+    "_ACTUAL",
+    "_TARGET",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "measurement of alternating voltage or current.   If not specified further in statistic, defaults to RMS voltage.    in .",
+        "measurement of DC current or voltage.   in .",
+        "measured or reported value of an .   in .",
+        "goal of the operation or process.   in .",
+      ]
+    }
+  }
+}

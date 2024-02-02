@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CompositionStateSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTION",
+    "_LATERAL",
+    "_MOTION",
+    "_SWITCHED",
+    "_VERTICAL",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "indication of the operating state of a mechanism.",
+        "indication of the position of a mechanism that may move in a lateral direction.   ",
+        "indication of the open or closed state of a mechanism. ",
+        "indication of the activation state of a mechanism.",
+        "indication of the position of a mechanism that may move in a vertical direction.",
+      ]
+    }
+  }
+}

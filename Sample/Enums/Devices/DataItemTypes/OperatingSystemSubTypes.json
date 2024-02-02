@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OperatingSystemSubTypes",
+  "type": "string",
+  "enum": [
+    "_LICENSE",
+    "_VERSION",
+    "_RELEASE_DATE",
+    "_INSTALL_DATE",
+    "_MANUFACTURER",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "license code to validate or activate the hardware or software.",
+        "version of the hardware or software.",
+        "date the hardware or software was released for general use.  ",
+        "date the hardware or software was installed.",
+        "corporate identity for the maker of the hardware or software.  ",
+      ]
+    }
+  }
+}

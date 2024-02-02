@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VolumeFluidSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTUAL",
+    "_CONSUMED",
+    "_PART",
+    "_WASTE",
+    "_START",
+    "_ENDED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "measured or reported value of an .",
+        "reported or measured value of the amount used in the manufacturing process.",
+        "reported or measured value of amount included in the .",
+        "reported or measured value of the amount discarded.",
+        "boundary when an activity or an event commences.",
+        "boundary when an activity or an event terminates.",
+      ]
+    }
+  }
+}

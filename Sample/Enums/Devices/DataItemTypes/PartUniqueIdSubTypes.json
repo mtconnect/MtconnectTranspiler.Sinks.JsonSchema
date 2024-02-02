@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PartUniqueIdSubTypes",
+  "type": "string",
+  "enum": [
+    "_SERIAL_NUMBER",
+    "_RAW_MATERIAL",
+    "_UUID",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "serial number that uniquely identifies a specific part.",
+        "material that is used to produce parts.",
+        "universally unique identifier as specified in ISO 11578 or RFC 4122.",
+      ]
+    }
+  }
+}

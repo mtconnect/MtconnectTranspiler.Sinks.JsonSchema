@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProgramEditValues",
+  "type": "string",
+  "enum": [
+    "ACTIVE",
+    "READY",
+    "NOT_READY",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        " is in the program edit mode.",
+        " is capable of entering the program edit mode and no function is inhibiting a change to that mode.",
+        " is being inhibited by a function from entering the program edit mode.",
+      ]
+    }
+  }
+}

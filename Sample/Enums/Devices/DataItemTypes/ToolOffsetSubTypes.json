@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ToolOffsetSubTypes",
+  "type": "string",
+  "enum": [
+    "_RADIAL",
+    "_LENGTH",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "reference to a radial type tool offset variable.",
+        "reference to a length type tool offset variable.",
+      ]
+    }
+  }
+}

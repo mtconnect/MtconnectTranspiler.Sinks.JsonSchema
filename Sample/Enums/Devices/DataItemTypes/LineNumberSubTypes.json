@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LineNumberSubTypes",
+  "type": "string",
+  "enum": [
+    "_ABSOLUTE",
+    "_INCREMENTAL",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "position of a block of program code relative to the beginning of the control program.",
+        "position of a block of program code relative to the occurrence of the last  encountered in the control program.",
+      ]
+    }
+  }
+}

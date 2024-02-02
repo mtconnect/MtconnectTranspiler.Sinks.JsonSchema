@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChuckStateValues",
+  "type": "string",
+  "enum": [
+    "OPEN",
+    "CLOSED",
+    "UNLATCHED",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        " is open to the point of a positive confirmation.",
+        " is closed to the point of a positive confirmation.",
+        " is not closed to the point of a positive confirmation and not open to the point of a positive confirmation.   It is in an intermediate position.",
+      ]
+    }
+  }
+}

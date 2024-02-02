@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PathFeedrateSubTypes",
+  "type": "string",
+  "enum": [
+    "_ACTUAL",
+    "_COMMANDED",
+    "_JOG",
+    "_PROGRAMMED",
+    "_RAPID",
+    "_OVERRIDE",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "measured or reported value of an .",
+        "directive value including adjustments such as an offset or overrides.",
+        "relating to momentary activation of a function or a movement.  : May be deprecated in the future.",
+        "directive value without offsets and adjustments.",
+        "performing an operation faster or in less time than nominal rate.",
+        "operator's overridden value.   in .",
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DirectionSubTypes",
+  "type": "string",
+  "enum": [
+    "_ROTARY",
+    "_LINEAR",
+  ],
+  "description": "",
+  "properties": {
+    "enumNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "enum": [
+        "rotational direction of a rotary motion using the right hand rule convention.",
+        "direction of motion of a linear motion.",
+      ]
+    }
+  }
+}
